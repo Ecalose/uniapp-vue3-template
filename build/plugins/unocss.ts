@@ -5,5 +5,7 @@
 import UnoCSS from 'unocss/vite';
 
 export const UnoCSSPlugin = () => {
-  return UnoCSS();
+  return UnoCSS({
+    mode: 'per-module',
+  });
 };

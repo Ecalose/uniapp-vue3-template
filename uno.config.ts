@@ -8,7 +8,9 @@ export default defineConfig({
   presets: [
     // https://uni-helper.js.org/unocss-preset-uni
     presetUni({
-      attributify: false,
+      attributify: {
+        prefixedOnly: true,
+      },
     }),
     // https://unocss.dev/presets/icons
     presetIcons({
