@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import { onHide, onLaunch, onShow } from '@dcloudio/uni-app';
 import { useAppStore } from '@/store';
+// #ifdef MP-WEIXIN
 import { mpUpdate } from '@/utils/index';
+// #endif
 
 const appStore = useAppStore();
 
